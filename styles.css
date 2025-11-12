@@ -499,20 +499,23 @@ footer .powered-by {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.75rem;
-    margin-top: var(--spacing-sm);
-    padding-top: var(--spacing-md);
+    gap: 1rem;
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-lg);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 footer .powered-by-text {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 footer .powered-by-logo {
-    height: 48px;
+    height: 80px;
     width: auto;
+    min-width: 200px;
+    max-width: 300px;
     opacity: 0.9;
     transition: opacity 0.3s ease;
 }
@@ -579,6 +582,12 @@ footer .powered-by-logo:hover {
     
     footer .powered-by {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
+    }
+    
+    footer .powered-by-logo {
+        height: 60px;
+        min-width: 150px;
+        max-width: 250px;
     }
 }
