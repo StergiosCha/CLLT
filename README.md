@@ -171,12 +171,16 @@ Edit `styles.css`:
 
 ## Features
 
-- ✅ Fully responsive (mobile-friendly)
-- ✅ Modern, clean design
-- ✅ Fast loading (no external dependencies)
-- ✅ SEO-friendly
-- ✅ Easy to update
-- ✅ Professional academic aesthetic
+- ✅ **Anthropic-inspired design** - Clean, minimalist aesthetic with warm colors
+- ✅ **Stunning photography** - High-quality Unsplash images throughout
+- ✅ **Modern typography** - Inter & Newsreader fonts for professional look
+- ✅ **Fully responsive** - Perfect on desktop, tablet, and mobile
+- ✅ **Hero sections** - Eye-catching full-screen hero images on every page
+- ✅ **Smooth animations** - Subtle hover effects and transitions
+- ✅ **Fast loading** - Optimized images with lazy loading
+- ✅ **SEO-friendly** - Semantic HTML and proper structure
+- ✅ **Easy to update** - Clean, well-commented code
+- ✅ **Professional academic aesthetic** - Sophisticated yet approachable
 
 ## Browser Support
 

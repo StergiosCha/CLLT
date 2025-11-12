@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications - CLLT</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -22,96 +25,135 @@
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container">
+    <header class="hero-modern">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1920&q=80" alt="Academic Publications" loading="eager">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
             <h1>Publications</h1>
             <p class="subtitle">Research outputs from CLLT</p>
         </div>
     </header>
 
-    <main class="container">
-        <section class="content-section">
-            <h2>Recent Publications</h2>
-            <p>
-                Our lab has published over 100 papers in leading venues for computational linguistics, 
-                natural language processing, and theoretical linguistics. Below is a selection of recent work.
-            </p>
-
-            <!-- Example publication entries - replace with actual publications -->
-            <div class="publication">
-                <h3>Greek Regional Dialects Dataset (GRDD+): Fine-tuning LLMs for Greek Dialectal Varieties</h3>
-                <p class="authors">CLLT Team</p>
-                <p class="venue">In preparation for LREC 2026</p>
-                <div class="links">
-                    <a href="#">Paper</a>
-                    <a href="#">Dataset</a>
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Recent Publications</h2>
+                    <p>
+                        Our lab has published over 100 papers in leading venues for computational linguistics, 
+                        natural language processing, and theoretical linguistics. Below is a selection of recent work.
+                    </p>
                 </div>
-            </div>
 
-            <div class="publication">
-                <h3>MEDEA-NEUMOUSA: Neuro-Symbolic Platform for Ancient Text Analysis</h3>
-                <p class="authors">CLLT Team</p>
-                <p class="venue">Digital Humanities Conference 2025</p>
-                <div class="links">
-                    <a href="#">Paper</a>
-                    <a href="#">Demo</a>
+                <div class="publication">
+                    <h3>Greek Regional Dialects Dataset (GRDD+): Fine-tuning LLMs for Greek Dialectal Varieties</h3>
+                    <p class="authors">CLLT Team</p>
+                    <p class="venue">In preparation for LREC 2026</p>
+                    <div class="links">
+                        <a href="#">Paper</a>
+                        <a href="#">Dataset</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="publication">
-                <h3>A Seven-Dimensional Framework for Linguistic Distance in Indo-European Languages</h3>
-                <p class="authors">CLLT Team</p>
-                <p class="venue">Computational Linguistics, 2025</p>
-                <div class="links">
-                    <a href="#">Paper</a>
+                <div class="publication">
+                    <h3>MEDEA-NEUMOUSA: Neuro-Symbolic Platform for Ancient Text Analysis</h3>
+                    <p class="authors">CLLT Team</p>
+                    <p class="venue">Digital Humanities Conference 2025</p>
+                    <div class="links">
+                        <a href="#">Paper</a>
+                        <a href="#">Demo</a>
+                    </div>
+                </div>
+
+                <div class="publication">
+                    <h3>A Seven-Dimensional Framework for Linguistic Distance in Indo-European Languages</h3>
+                    <p class="authors">CLLT Team</p>
+                    <p class="venue">Computational Linguistics, 2025</p>
+                    <div class="links">
+                        <a href="#">Paper</a>
+                    </div>
+                </div>
+
+                <div class="publication">
+                    <h3>RAG-Enhanced Event Extraction from Classical Texts</h3>
+                    <p class="authors">CLLT Team</p>
+                    <p class="venue">ACL 2025</p>
+                    <div class="links">
+                        <a href="#">Paper</a>
+                        <a href="#">Code</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="content-section highlight">
-            <h2>Key Research Areas</h2>
-            <p>Our publications cover the following main areas:</p>
-            <ul style="margin-left: 2rem; margin-top: 1rem;">
-                <li>Natural Language Processing for Greek and dialectal varieties</li>
-                <li>Neuro-symbolic AI and hybrid reasoning systems</li>
-                <li>Computational semantics and formal linguistics</li>
-                <li>Digital humanities and classical text analysis</li>
-                <li>Low-resource language technology</li>
-                <li>Knowledge graph construction and reasoning</li>
-            </ul>
-        </section>
-
-        <section class="content-section">
-            <h2>Datasets and Resources</h2>
-            <p>
-                We develop and maintain several publicly available datasets and resources for the research community:
-            </p>
-            <div class="focus-item" style="margin-top: 1rem; margin-bottom: 1rem;">
-                <h3>OYXOY Benchmark</h3>
-                <p>Greek Natural Language Inference benchmark for evaluating language understanding models</p>
-            </div>
-            <div class="focus-item" style="margin-bottom: 1rem;">
-                <h3>Greek Regional Dialects Corpus</h3>
-                <p>Comprehensive corpus covering Cypriot, Pontic, Cretan, and Northern Greek dialectal varieties</p>
-            </div>
-            <div class="focus-item">
-                <h3>MEDEA Platform</h3>
-                <p>Tools and resources for computational analysis of ancient Greek texts</p>
+        <section class="research-section">
+            <div class="container">
+                <div class="content-section highlight">
+                    <h2>Key Research Areas</h2>
+                    <p>Our publications cover the following main areas:</p>
+                    <ul style="margin-left: 2rem; margin-top: 1.5rem; line-height: 2;">
+                        <li>Natural Language Processing for Greek and dialectal varieties</li>
+                        <li>Neuro-symbolic AI and hybrid reasoning systems</li>
+                        <li>Computational semantics and formal linguistics</li>
+                        <li>Digital humanities and classical text analysis</li>
+                        <li>Low-resource language technology</li>
+                        <li>Knowledge graph construction and reasoning</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>Complete Bibliography</h2>
-            <p>
-                For a complete list of publications, please visit the personal pages of lab members or 
-                contact us directly. Professor Chatzikyriakidis has published over 100 papers with an 
-                h-index of 24.
-            </p>
-            <p>
-                <a href="https://www.stergioschatzikyriakidis.com/" target="_blank">
-                    Visit Professor Chatzikyriakidis's publications page
-                </a>
-            </p>
+        <section class="about-section">
+            <div class="container">
+                <h2>Datasets and Resources</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--color-text-light);">
+                    We develop and maintain several publicly available datasets and resources for the research community
+                </p>
+                
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="OYXOY Benchmark" loading="lazy">
+                        </div>
+                        <h3>OYXOY Benchmark</h3>
+                        <p>Greek Natural Language Inference benchmark for evaluating language understanding models</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=600&q=80" alt="Greek Dialects Corpus" loading="lazy">
+                        </div>
+                        <h3>Greek Regional Dialects Corpus</h3>
+                        <p>Comprehensive corpus covering Cypriot, Pontic, Cretan, and Northern Greek dialectal varieties</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=600&q=80" alt="MEDEA Platform" loading="lazy">
+                        </div>
+                        <h3>MEDEA Platform</h3>
+                        <p>Tools and resources for computational analysis of ancient Greek texts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Complete Bibliography</h2>
+                    <p>
+                        For a complete list of publications, please visit the personal pages of lab members or 
+                        contact us directly. Professor Chatzikyriakidis has published over 100 papers with an 
+                        h-index of 24.
+                    </p>
+                    <p>
+                        <a href="https://www.stergioschatzikyriakidis.com/" target="_blank">
+                            Visit Professor Chatzikyriakidis's publications page →
+                        </a>
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
 

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - CLLT</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -22,76 +25,110 @@
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container">
+    <header class="hero-modern">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80" alt="University of Crete" loading="eager">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
             <h1>Contact Us</h1>
             <p class="subtitle">Get in touch with CLLT</p>
         </div>
     </header>
 
-    <main class="container">
-        <section class="content-section">
-            <h2>Location</h2>
-            <div class="contact-info">
-                <h3>Computational Linguistics and Language Technology Lab</h3>
-                <p><strong>Department:</strong> Department of Philology</p>
-                <p><strong>Institution:</strong> University of Crete</p>
-                <p><strong>Location:</strong> Rethymno, Crete, Greece</p>
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Location</h2>
+                    <div class="contact-info">
+                        <h3>Computational Linguistics and Language Technology Lab</h3>
+                        <p><strong>Department:</strong> Department of Philology</p>
+                        <p><strong>Institution:</strong> University of Crete</p>
+                        <p><strong>Location:</strong> Rethymno, Crete, Greece</p>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Lab Director</h2>
+                    <div class="contact-info">
+                        <h3>Professor Stergios Chatzikyriakidis</h3>
+                        <p><strong>Position:</strong> Professor of Computational Linguistics</p>
+                        <p><strong>Email:</strong> [Add email address]</p>
+                        <p><strong>Website:</strong> <a href="https://www.stergioschatzikyriakidis.com/" target="_blank">stergioschatzikyriakidis.com</a></p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>Lab Director</h2>
-            <div class="contact-info">
-                <h3>Professor Stergios Chatzikyriakidis</h3>
-                <p><strong>Position:</strong> Professor of Computational Linguistics</p>
-                <p><strong>Email:</strong> [Add email address]</p>
-                <p><strong>Website:</strong> <a href="https://www.stergioschatzikyriakidis.com/" target="_blank">stergioschatzikyriakidis.com</a></p>
+        <section class="research-section">
+            <div class="container">
+                <div class="content-section highlight">
+                    <h2>Research Inquiries</h2>
+                    <p>
+                        We welcome inquiries from prospective students, collaborators, and research partners interested 
+                        in computational linguistics and natural language processing.
+                    </p>
+                    
+                    <h3 style="margin-top: 2rem;">For prospective students</h3>
+                    <p>
+                        If you are interested in pursuing graduate studies (Master's or PhD) at CLLT, please send your CV, 
+                        research interests, and relevant background to the lab director.
+                    </p>
+                    
+                    <h3 style="margin-top: 2rem;">For collaborations</h3>
+                    <p>
+                        We are open to research collaborations with academic institutions, industry partners, and research 
+                        organizations. Please contact us to discuss potential projects.
+                    </p>
+                    
+                    <h3 style="margin-top: 2rem;">For dataset access</h3>
+                    <p>
+                        Many of our datasets and resources are publicly available. Contact us for information about 
+                        specific resources or collaboration opportunities.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section class="content-section highlight">
-            <h2>Research Inquiries</h2>
-            <p>
-                We welcome inquiries from prospective students, collaborators, and research partners interested 
-                in computational linguistics and natural language processing.
-            </p>
-            <p>
-                <strong>For prospective students:</strong> If you are interested in pursuing graduate studies 
-                (Master's or PhD) at CLLT, please send your CV, research interests, and relevant background 
-                to the lab director.
-            </p>
-            <p>
-                <strong>For collaborations:</strong> We are open to research collaborations with academic 
-                institutions, industry partners, and research organizations. Please contact us to discuss 
-                potential projects.
-            </p>
-            <p>
-                <strong>For dataset access:</strong> Many of our datasets and resources are publicly available. 
-                Contact us for information about specific resources or collaboration opportunities.
-            </p>
-        </section>
-
-        <section class="content-section">
-            <h2>Additional Affiliations</h2>
-            <div class="contact-info">
-                <h3>MuVeS AI</h3>
-                <p><strong>Role:</strong> Head of Research</p>
-                <p><strong>Website:</strong> <a href="https://muves.io/" target="_blank">muves.io</a></p>
-            </div>
-            <div class="contact-info">
-                <h3>SimasiaAI</h3>
-                <p><strong>Role:</strong> CEO</p>
-                <p><strong>Website:</strong> <a href="https://www.simasiaai.gr/" target="_blank">simasiaai.gr</a></p>
+        <section class="about-section">
+            <div class="container">
+                <h2>Additional Affiliations</h2>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80" alt="MuVeS AI" loading="lazy">
+                        </div>
+                        <h3>MuVeS AI</h3>
+                        <p class="role">Head of Research</p>
+                        <p><a href="https://muves.io/" target="_blank">muves.io</a></p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80" alt="SimasiaAI" loading="lazy">
+                        </div>
+                        <h3>SimasiaAI</h3>
+                        <p class="role">CEO</p>
+                        <p><a href="https://www.simasiaai.gr/" target="_blank">simasiaai.gr</a></p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>Visit Us</h2>
-            <p>
-                The lab is located at the Department of Philology, University of Crete, in Rethymno. 
-                Visitors are welcome by appointment. Please contact us in advance to schedule a visit.
-            </p>
+        <section class="research-section">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Visit Us</h2>
+                    <p>
+                        The lab is located at the Department of Philology, University of Crete, in Rethymno. 
+                        Visitors are welcome by appointment. Please contact us in advance to schedule a visit.
+                    </p>
+                    <p>
+                        Rethymno is a beautiful historic city on the island of Crete, easily accessible by air 
+                        through Heraklion or Chania airports, with excellent connections to major European cities.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
 
