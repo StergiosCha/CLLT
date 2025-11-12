@@ -115,10 +115,10 @@ a:hover {
 }
 
 .nav-brand .logo {
-    height: 32px;
-    max-height: 32px;
+    height: 48px;
+    max-height: 48px;
     width: auto;
-    max-width: 32px;
+    max-width: 48px;
     display: block;
     object-fit: contain;
     flex-shrink: 0;
@@ -511,7 +511,7 @@ footer .powered-by-text {
 }
 
 footer .powered-by-logo {
-    height: 24px;
+    height: 48px;
     width: auto;
     opacity: 0.9;
     transition: opacity 0.3s ease;
@@ -572,9 +572,9 @@ footer .powered-by-logo:hover {
     }
     
     .nav-brand .logo {
-        height: 32px;
-        max-height: 32px;
-        max-width: 32px;
+        height: 40px;
+        max-height: 40px;
+        max-width: 40px;
     }
     
     footer .powered-by {
