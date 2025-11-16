@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Language Inference - CLLT Lab</title>
+    <meta name="description" content="CLLT's work on natural language inference: symbolic systems, proof assistants, FraCaS, OYXOY, neural-symbolic integration.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/cllt-logo.png" alt="CLLT Lab Logo" class="logo" onerror="this.style.display='none'">
+                    <h1>CLLT</h1>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="research.html">Research</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="nli.html" class="active">Natural Language Inference</a></li>
+                        <li><a href="greek-nlp.html">Greek NLP</a></li>
+                        <li><a href="type-theory.html">Type-Theoretical Semantics</a></li>
+                        <li><a href="digital-humanities.html">Digital Humanities</a></li>
+                        <li><a href="dialectology.html">Computational Dialectology</a></li>
+                    </ul>
+                </li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="datasets.html">Datasets</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Natural Language Inference</h1>
+            <p class="subtitle">Combining symbolic reasoning with neural approaches</p>
+            <p class="meta">Type theory · Proof assistants · FraCaS benchmark · Neural-symbolic integration</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <h2 class="mb-lg">Our Approach</h2>
+                <p>
+                    CLLT's work on natural language inference (NLI) is distinguished by its <strong>integration of formal semantic 
+                    theory with computational implementation</strong>. Unlike pure machine learning approaches that treat NLI as pattern 
+                    matching, we build systems grounded in type-theoretical semantics and proof theory.
+                </p>
+                <p>
+                    Our research demonstrates that <strong>linguistic theory enhances computational systems</strong>: our symbolic NLI 
+                    system achieves 81% accuracy on the FraCaS test suite (best performance by a logical system) and was the first 
+                    to complete the challenging anaphora and ellipsis sections. This work bridges the gap between neural scalability 
+                    and symbolic interpretability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="text-center mb-xl">Key Projects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="badge badge-accent">Landmark Result</span>
+                        </div>
+                        <h3 class="card-title">FraCaS Test Suite: 81% Accuracy</h3>
+                        <p class="card-text">
+                            <strong>Best performance by a logical system on FraCaS</strong> (Bernardy & Chatzikyriakidis, IWCS 2021). 
+                            Complete handling of temporal reasoning, anaphora, and ellipsis using type-theoretical semantics 
+                            implemented in proof assistants.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://aclanthology.org/2021.iwcs-1.2/" class="pub-link" target="_blank">📄 Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="badge badge-primary">2024</span>
+                            <span class="badge badge-accent">Innovation</span>
+                        </div>
+                        <h3 class="card-title">OYXOY: Multi-Label NLI</h3>
+                        <p class="card-text">
+                            First NLI dataset marking <strong>all possible inference labels</strong>, accounting for semantic ambiguity. 
+                            1,763 pairs with 6,896 word senses. Challenges the assumption that NLI has single correct answers.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://aclanthology.org/2024.findings-eacl.21/" class="pub-link" target="_blank">📄 Paper</a>
+                            <a href="https://github.com/StergiosCha/OYXOY" class="pub-link" target="_blank">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="badge badge-success">2014-2025</span>
+                        </div>
+                        <h3 class="card-title">Proof Assistants for NLI</h3>
+                        <p class="card-text">
+                            Using Coq and other proof assistants for <strong>formal verification of natural language inferences</strong>. 
+                            Enables explainable AI through human-readable proofs. Foundational work published in JLLI (2014).
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://link.springer.com/article/10.1007/s10849-014-9208-x" class="pub-link" target="_blank">📄 JLLI 2014</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="badge badge-primary">2022-2025</span>
+                        </div>
+                        <h3 class="card-title">Greek NLI Resources</h3>
+                        <p class="card-text">
+                            Extended Greek FraCaS (774 examples), de-dropped Greek XNLI, and fine-grained entailment resources 
+                            for under-resourced language research.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://aclanthology.org/2022.dclrl-1.6/" class="pub-link" target="_blank">📄 LREC 2022</a>
+                            <a href="https://github.com/GU-CLASP/LREC_2022" class="pub-link" target="_blank">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="badge badge-accent">Workshop Series</span>
+                        </div>
+                        <h3 class="card-title">NALOMA: Natural Logic Meets ML</h3>
+                        <p class="card-text">
+                            Co-organizer of 4 international workshops (2019-2023) exploring hybrid approaches combining 
+                            natural logic with machine learning. Special issue in JLLI (2024).
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://link.springer.com/article/10.1007/s10849-023-09408-y" class="pub-link" target="_blank">📄 JLLI SI</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="badge badge-primary">2019-2025</span>
+                        </div>
+                        <h3 class="card-title">Bayesian Inference Semantics</h3>
+                        <p class="card-text">
+                            Probabilistic framework for formal semantics, combining type theory with Bayesian methods. 
+                            CSLI volume (2023) and *SEM paper (2019).
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://aclanthology.org/S19-1029/" class="pub-link" target="_blank">📄 *SEM 2019</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <h2 class="mb-lg">Why This Matters</h2>
+                
+                <h3 class="mt-lg">Explainable AI</h3>
+                <p>
+                    Our proof-assistant-based approach produces <strong>human-readable logical proofs</strong> for inferences, 
+                    addressing the black-box problem in neural NLI systems. This is crucial for applications requiring transparency 
+                    and accountability.
+                </p>
+
+                <h3 class="mt-lg">Semantic Precision</h3>
+                <p>
+                    Type-theoretical semantics provides <strong>compositional meaning representations</strong> that capture subtle 
+                    semantic distinctions missed by distributional approaches. Our work on FraCaS demonstrates superior handling 
+                    of quantifiers, temporal relations, and complex semantic phenomena.
+                </p>
+
+                <h3 class="mt-lg">Low-Resource Languages</h3>
+                <p>
+                    Symbolic approaches require <strong>less training data</strong> than pure neural methods, making them ideal 
+                    for under-resourced languages like Greek dialects. Our Greek NLI resources enable research that would be 
+                    impossible with data-hungry transformers alone.
+                </p>
+
+                <h3 class="mt-lg">Hybrid Future</h3>
+                <p>
+                    We advocate for <strong>neural-symbolic integration</strong>: using neural models for robust parsing and 
+                    representation learning, combined with symbolic reasoning for precise inference. This synthesis offers 
+                    both scalability and interpretability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="mb-md">Selected Publications</h2>
+                <div style="text-align: left; margin-top: var(--spacing-lg);">
+                    <div class="publication-card">
+                        <h3 class="publication-title">OYXOY: A Modern NLP Test Suite for Modern Greek</h3>
+                        <div class="publication-authors">Kogkalidis, K., Chatzikyriakidis, S., et al.</div>
+                        <div class="publication-venue">Findings of EACL 2024</div>
+                        <div class="publication-links">
+                            <a href="https://aclanthology.org/2024.findings-eacl.21/" class="pub-link" target="_blank">Paper</a>
+                            <a href="datasets.html" class="pub-link secondary">Dataset</a>
+                        </div>
+                    </div>
+
+                    <div class="publication-card">
+                        <h3 class="publication-title">Applied Temporal Analysis: A Complete Run of the FraCaS Test Suite</h3>
+                        <div class="publication-authors">Bernardy, J.P., Chatzikyriakidis, S.</div>
+                        <div class="publication-venue">IWCS 2021</div>
+                        <div class="publication-links">
+                            <a href="https://aclanthology.org/2021.iwcs-1.2/" class="pub-link" target="_blank">Paper</a>
+                        </div>
+                    </div>
+
+                    <div class="publication-card">
+                        <h3 class="publication-title">A Wide-Coverage Symbolic Natural Language Inference System</h3>
+                        <div class="publication-authors">Chatzikyriakidis, S., Bernardy, J.P.</div>
+                        <div class="publication-venue">NoDaLiDa 2019</div>
+                        <div class="publication-links">
+                            <a href="https://aclanthology.org/W19-6131/" class="pub-link" target="_blank">Paper</a>
+                        </div>
+                    </div>
+
+                    <div class="publication-card">
+                        <h3 class="publication-title">Natural Language Inference in Coq</h3>
+                        <div class="publication-authors">Chatzikyriakidis, S., Luo, Z.</div>
+                        <div class="publication-venue">Journal of Logic, Language and Information, 2014</div>
+                        <div class="publication-links">
+                            <a href="https://link.springer.com/article/10.1007/s10849-014-9208-x" class="pub-link" target="_blank">Paper</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-lg">
+                    <a href="publications.html" class="btn btn-primary">View All Publications</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Computational Linguistics and Language Technology Lab, University of Crete</p>
+            <div class="powered-by">
+                <span class="powered-by-text">Powered by</span>
+                <a href="https://www.simasiaai.gr/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/simasiaai-logo.png" alt="SimasiaAI" class="powered-by-logo" onerror="this.style.display='none'">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

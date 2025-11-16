@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLLT - Computational Linguistics and Language Technology Lab</title>
+    <title>CLLT - Computational Linguistics and Language Technology Lab | University of Crete</title>
+    <meta name="description" content="CLLT bridges theoretical linguistics and neural-symbolic AI. Leading research in Greek NLP, natural language inference, type theory, and digital humanities.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
-                    <img src="images/cllt-logo.png" alt="CLLT Lab Logo" class="logo">
+                <a href="index.html">
+                    <img src="images/cllt-logo.png" alt="CLLT Lab Logo" class="logo" onerror="this.style.display='none'">
                     <h1>CLLT</h1>
                 </a>
             </div>
@@ -23,197 +24,271 @@
                 <li class="has-dropdown">
                     <a href="research.html">Research</a>
                     <ul class="nav-dropdown">
-                        <li><a href="research.html#areas">Research Areas</a></li>
-                        <li><a href="research.html#projects">Current Projects</a></li>
-                        <li><a href="research.html#applications">AI/NLP Applications</a></li>
-                        <li><a href="research.html#collaborations">Collaborations</a></li>
+                        <li><a href="nli.html">Natural Language Inference</a></li>
+                        <li><a href="greek-nlp.html">Greek NLP</a></li>
+                        <li><a href="type-theory.html">Type-Theoretical Semantics</a></li>
+                        <li><a href="digital-humanities.html">Digital Humanities</a></li>
+                        <li><a href="dialectology.html">Computational Dialectology</a></li>
                     </ul>
                 </li>
-                <li class="has-dropdown">
-                    <a href="team.html">Team</a>
-                    <ul class="nav-dropdown">
-                        <li><a href="team.html#director">Lab Director</a></li>
-                        <li><a href="team.html#team">Research Team</a></li>
-                        <li><a href="team.html#join">Join Our Team</a></li>
-                        <li><a href="team.html#alumni">Alumni</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown">
-                    <a href="publications.html">Publications</a>
-                    <ul class="nav-dropdown">
-                        <li><a href="publications.html#recent">Recent Publications</a></li>
-                        <li><a href="publications.html#datasets">Datasets & Resources</a></li>
-                        <li><a href="publications.html#complete">Complete Bibliography</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown">
-                    <a href="teaching.html">Teaching</a>
-                    <ul class="nav-dropdown">
-                        <li><a href="teaching.html#courses">Courses</a></li>
-                        <li><a href="teaching.html#supervision">Student Supervision</a></li>
-                        <li><a href="teaching.html#apply">Apply</a></li>
-                    </ul>
-                </li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="datasets.html">Datasets</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="news.html">News</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero-modern">
-        <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1920&q=80" alt="AI Technology" loading="eager">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="container hero-content">
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
             <h1>Computational Linguistics and Language Technology Lab</h1>
-            <p class="subtitle">Building AI to serve humanity's long-term well-being</p>
-            <p class="hero-description">University of Crete · Department of Philology</p>
+            <p class="subtitle">Bridging Theoretical Linguistics and Neural-Symbolic AI</p>
+            <p class="meta">University of Crete · Department of Philology</p>
+            <div class="hero-cta">
+                <a href="research.html" class="btn btn-primary">Explore Our Research</a>
+                <a href="datasets.html" class="btn btn-secondary">View Datasets</a>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section class="about-section">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h2>About the Lab</h2>
-                        <p>
-                            The Computational Linguistics and Language Technology Lab (CLLT) focuses on promoting research 
-                            and education in Natural Language Processing on both a practical and theoretical level. The lab 
-                            fosters interdisciplinary research between Linguistics, Computer Science, and Cognitive Science.
-                        </p>
-                        <p>
-                            The lab specializes in generative as well as neuro-symbolic AI/NLP and is the only NLP lab at 
-                            the University of Crete. The lab also has an active interest in emerging new technologies in 
-                            Digital Humanities.
-                        </p>
-                        <p>
-                            CLLT is based at the Department of Philology, University of Crete, and is currently headed by 
-                            <a href="https://www.stergioschatzikyriakidis.com/" target="_blank">Professor Stergios Chatzikyriakidis</a>. 
-                            The lab welcomes graduate students and researchers interested in computational linguistics and NLP.
-                        </p>
-                    </div>
-                    <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&q=80" alt="Research and Technology" loading="lazy">
-                    </div>
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Publications (2022-2025)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Major Open Datasets</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">€2.5M</div>
+                    <div class="stat-label">EU Research Funding</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">International Collaborators</div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="research-section">
-            <div class="container">
-                <h2>Research Focus</h2>
-                <div class="research-grid">
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80" alt="Natural Language Processing" loading="lazy">
-                        </div>
-                        <h3>Natural Language Processing</h3>
-                        <p>Advanced computational methods for understanding and generating human language</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80" alt="Neuro-Symbolic AI" loading="lazy">
-                        </div>
-                        <h3>Neuro-Symbolic AI</h3>
-                        <p>Combining neural networks with symbolic reasoning for robust language understanding</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80" alt="Greek Language Technology" loading="lazy">
-                        </div>
-                        <h3>Greek Language Technology</h3>
-                        <p>Specialized resources and tools for Greek and its dialectal varieties</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&q=80" alt="Digital Humanities" loading="lazy">
-                        </div>
-                        <h3>Digital Humanities</h3>
-                        <p>Computational approaches to classical texts and historical linguistics</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="news-section">
-            <div class="container">
-                <h2>Latest News</h2>
-                <div class="news-grid">
-                    <div class="news-card">
-                        <p class="news-date">March 2024</p>
-                        <p>Our paper "OYXOY: A Modern NLP Test Suite for Modern Greek" accepted at Findings of ACL: EACL 2024! New benchmark for evaluating Greek language understanding models.</p>
-                    </div>
-                    <div class="news-card">
-                        <p class="news-date">August 2023</p>
-                        <p>Released GRDD: Greek Regional Dialects Dataset covering Cypriot, Pontic, Cretan, and Northern Greek varieties. Dataset and paper now available on arXiv.</p>
-                    </div>
-                    <div class="news-card">
-                        <p class="news-date">2023</p>
-                        <p>Launched MEDEA-NEUMOUSA platform for computational analysis of ancient Greek texts with knowledge graph extraction capabilities.</p>
-                    </div>
-                    <div class="news-card">
-                        <p class="news-date">Ongoing</p>
-                        <p>Collaborations with SimasiaAI and MuVeS AI bringing research innovations to practical NLP applications for Greek language technology.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="research-section">
-            <div class="container">
-                <h2>Lab Activities</h2>
-                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--color-text-light);">
-                    CLLT engages in a wide range of activities promoting research, education, and collaboration in computational linguistics
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About the Lab</h2>
+                <p class="section-subtitle">
+                    The Computational Linguistics and Language Technology Lab (CLLT) is the only NLP lab at the University of Crete, 
+                    uniquely positioned at the intersection of theoretical linguistics, computer science, and cognitive science.
                 </p>
-                
-                <div class="research-grid">
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" alt="Research Projects" loading="lazy">
+            </div>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <p>
+                    CLLT specializes in <strong>neural-symbolic AI/NLP</strong> and <strong>type-theoretical semantics</strong>, 
+                    bringing formal linguistic rigor to modern computational approaches. Our research demonstrates that deep 
+                    theoretical understanding enhances machine learning systems, particularly for under-resourced languages 
+                    and complex semantic phenomena.
+                </p>
+                <p>
+                    We maintain active research programs in Greek NLP resources, natural language inference with proof assistants, 
+                    computational dialectology, and digital humanities applications. The lab is led by 
+                    <a href="https://www.stergioschatzikyriakidis.com/" target="_blank">Professor Stergios Chatzikyriakidis</a> 
+                    and collaborates extensively with leading institutions including Cambridge, Gothenburg, and London.
+                </p>
+                <p>
+                    <strong>Our unique approach:</strong> We don't just apply transformers to language—we understand language structure 
+                    through formal linguistics, then build computational systems informed by that understanding. This makes our work 
+                    particularly valuable for explainable AI, under-resourced languages, and applications requiring semantic precision.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Research -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Research</h2>
+                <p class="section-subtitle">Highlighting recent achievements at the intersection of linguistic theory and computation</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="badge badge-primary">2024</span>
+                            <span class="badge badge-accent">Dataset</span>
                         </div>
-                        <h3>Research Projects</h3>
-                        <p>Ongoing research projects in NLP, neuro-symbolic AI, Greek language technology, and digital humanities, funded by national and international grants</p>
+                        <h3 class="card-title">OYXOY: Modern Greek NLP Test Suite</h3>
+                        <p class="card-text">
+                            First multi-label NLI dataset accounting for semantic ambiguity. 1,763 inference pairs with 6,896 word senses. 
+                            Published at Findings of EACL 2024.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://aclanthology.org/2024.findings-eacl.21/" class="pub-link" target="_blank">📄 Paper</a>
+                            <a href="https://github.com/StergiosCha/OYXOY" class="pub-link" target="_blank">💻 Code</a>
+                            <a href="https://zenodo.org/records/12704732" class="pub-link" target="_blank">📊 Dataset</a>
+                        </div>
                     </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Education" loading="lazy">
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="badge badge-primary">2025</span>
+                            <span class="badge badge-success">Monograph</span>
                         </div>
-                        <h3>Education & Training</h3>
-                        <p>Graduate and undergraduate courses in computational linguistics, NLP, and language technology, mentoring PhD and Master's students</p>
+                        <h3 class="card-title">Theories of Types and the Structure of Meaning</h3>
+                        <p class="card-text">
+                            Cambridge Elements in Semantics. Comprehensive treatment of type-theoretical approaches to natural language semantics, 
+                            bridging formal linguistics and computational implementation.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://www.cambridge.org/core/what-we-publish/elements" class="pub-link" target="_blank">📚 Publisher</a>
+                        </div>
                     </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Conferences" loading="lazy">
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="badge badge-primary">2025</span>
+                            <span class="badge badge-accent">AI+Humanities</span>
                         </div>
-                        <h3>Conferences & Workshops</h3>
-                        <p>Organization and participation in international conferences, workshops, and seminars on computational linguistics and NLP</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Collaborations" loading="lazy">
+                        <h3 class="card-title">RAG-Enhanced Greek Poetry Generation</h3>
+                        <p class="card-text">
+                            Combining retrieval-augmented generation with formal verification for modern Greek interwar poetry. 
+                            Published at NLP4DH 2025 (NAACL).
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://aclanthology.org/2025.nlp4dh-1.22/" class="pub-link" target="_blank">📄 Paper</a>
                         </div>
-                        <h3>Industry Collaboration</h3>
-                        <p>Partnerships with technology companies and startups, including SimasiaAI and MuVeS AI, to translate research into practical applications</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&q=80" alt="Resources" loading="lazy">
-                        </div>
-                        <h3>Open Resources</h3>
-                        <p>Development and release of publicly available datasets, benchmarks, and tools for the NLP research community</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Outreach" loading="lazy">
-                        </div>
-                        <h3>Public Outreach</h3>
-                        <p>Engagement with the broader community through public talks, media appearances, and educational initiatives on AI and language technology</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Research Themes -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-xl">Research Themes</h2>
+            <div class="themes-grid">
+                <a href="nli.html" class="theme-card">
+                    <div class="theme-icon">🧠</div>
+                    <div class="theme-title">Natural Language Inference</div>
+                </a>
+                <a href="greek-nlp.html" class="theme-card">
+                    <div class="theme-icon">🇬🇷</div>
+                    <div class="theme-title">Greek NLP Resources</div>
+                </a>
+                <a href="type-theory.html" class="theme-card">
+                    <div class="theme-icon">📊</div>
+                    <div class="theme-title">Type-Theoretical Semantics</div>
+                </a>
+                <a href="digital-humanities.html" class="theme-card">
+                    <div class="theme-icon">📚</div>
+                    <div class="theme-title">Digital Humanities</div>
+                </a>
+                <a href="dialectology.html" class="theme-card">
+                    <div class="theme-icon">🗣️</div>
+                    <div class="theme-title">Computational Dialectology</div>
+                </a>
+                <div class="theme-card" style="cursor: default; opacity: 0.7;">
+                    <div class="theme-icon">🔬</div>
+                    <div class="theme-title">Neural-Symbolic Integration</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest News</h2>
+            </div>
+            <div class="news-timeline" style="max-width: 800px; margin: 0 auto;">
+                <div class="news-item">
+                    <div class="news-date">November 2025</div>
+                    <div class="news-content">
+                        Professor Chatzikyriakidis delivers plenary talk at Linguistic Sciences conference in Thessaloniki, 
+                        "From Ancient Greek to Modern AI: Computational Approaches to Language."
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">September 2025</div>
+                    <div class="news-content">
+                        Two papers accepted at COLM 2025 and LM4UC workshop (NAACL), advancing work on natural language 
+                        inference and critical reflection on computational linguistics methodology.
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">March 2024</div>
+                    <div class="news-content">
+                        <strong>OYXOY: A Modern NLP Test Suite for Modern Greek</strong> accepted at Findings of ACL: EACL 2024. 
+                        First multi-label NLI dataset for Greek with full dataset and code released.
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2023-Present</div>
+                    <div class="news-content">
+                        CLLT joins €2.5M TALOS-AI4SSH ERA Chair project, strengthening AI research capacity at University 
+                        of Crete and fostering collaboration with European institutions.
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">August 2023</div>
+                    <div class="news-content">
+                        Released <strong>GRDD: Greek Regional Dialects Dataset</strong> covering Cypriot, Pontic, Cretan, 
+                        and Northern Greek varieties. Dataset and paper available on arXiv and GitHub.
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-lg">
+                <a href="news.html" class="btn btn-primary">View All News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Philosophy -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h2 class="mb-lg">Our Research Philosophy</h2>
+                <p style="font-size: 1.2rem; color: var(--color-text-light); line-height: 1.8;">
+                    "We believe that <strong>formal linguistic theory and neural computation are complementary, not competing</strong> approaches. 
+                    Type-theoretical semantics provides the precision and interpretability that pure machine learning lacks, while neural 
+                    models offer the scalability and robustness that symbolic systems need. Our work demonstrates that the synthesis of these 
+                    approaches yields systems that are both powerful and explainable—essential for building AI we can trust."
+                </p>
+                <p class="mt-md" style="color: var(--color-text-muted);">
+                    — CLLT Research Statement
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section section-alt">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                <h2 class="mb-md">Join Our Research Community</h2>
+                <p style="font-size: 1.1rem; color: var(--color-text-light); margin-bottom: var(--spacing-lg);">
+                    We welcome graduate students, postdocs, and collaborators interested in computational linguistics, 
+                    NLP, and language technology at the intersection of theory and practice.
+                </p>
+                <div class="hero-cta" style="justify-content: center;">
+                    <a href="team.html#join" class="btn btn-primary">Apply to Join</a>
+                    <a href="contact.html" class="btn btn-secondary" style="color: var(--color-text); border-color: var(--color-border);">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
@@ -221,7 +296,7 @@
             <div class="powered-by">
                 <span class="powered-by-text">Powered by</span>
                 <a href="https://www.simasiaai.gr/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/simasiaai-logo.png" alt="SimasiaAI" class="powered-by-logo">
+                    <img src="images/simasiaai-logo.png" alt="SimasiaAI" class="powered-by-logo" onerror="this.style.display='none'">
                 </a>
             </div>
         </div>

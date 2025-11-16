@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team - CLLT</title>
+    <title>Team - CLLT Lab</title>
+    <meta name="description" content="CLLT team: Faculty, students, and international collaborators from Cambridge, Gothenburg, London, and beyond.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
-                    <img src="images/cllt-logo.png" alt="CLLT Lab Logo" class="logo">
+                <a href="index.html">
+                    <img src="images/cllt-logo.png" alt="CLLT Lab Logo" class="logo" onerror="this.style.display='none'">
                     <h1>CLLT</h1>
                 </a>
             </div>
@@ -23,115 +24,350 @@
                 <li class="has-dropdown">
                     <a href="research.html">Research</a>
                     <ul class="nav-dropdown">
-                        <li><a href="research.html#areas">Research Areas</a></li>
-                        <li><a href="research.html#projects">Current Projects</a></li>
-                        <li><a href="research.html#applications">AI/NLP Applications</a></li>
-                        <li><a href="research.html#collaborations">Collaborations</a></li>
+                        <li><a href="nli.html">Natural Language Inference</a></li>
+                        <li><a href="greek-nlp.html">Greek NLP</a></li>
+                        <li><a href="type-theory.html">Type-Theoretical Semantics</a></li>
+                        <li><a href="digital-humanities.html">Digital Humanities</a></li>
+                        <li><a href="dialectology.html">Computational Dialectology</a></li>
                     </ul>
                 </li>
-                <li class="has-dropdown">
-                    <a href="team.html" class="active">Team</a>
-                    <ul class="nav-dropdown">
-                        <li><a href="team.html#director">Lab Director</a></li>
-                        <li><a href="team.html#team">Research Team</a></li>
-                        <li><a href="team.html#join">Join Our Team</a></li>
-                        <li><a href="team.html#alumni">Alumni</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown">
-                    <a href="publications.html">Publications</a>
-                    <ul class="nav-dropdown">
-                        <li><a href="publications.html#recent">Recent Publications</a></li>
-                        <li><a href="publications.html#datasets">Datasets & Resources</a></li>
-                        <li><a href="publications.html#complete">Complete Bibliography</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown">
-                    <a href="teaching.html">Teaching</a>
-                    <ul class="nav-dropdown">
-                        <li><a href="teaching.html#courses">Courses</a></li>
-                        <li><a href="teaching.html#supervision">Student Supervision</a></li>
-                        <li><a href="teaching.html#apply">Apply</a></li>
-                    </ul>
-                </li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="datasets.html">Datasets</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+                <li><a href="news.html">News</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero-modern">
-        <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80" alt="Team Collaboration" loading="eager">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="container hero-content">
+    <header class="hero">
+        <div class="container">
             <h1>Our Team</h1>
-            <p class="subtitle">Meet the researchers and students at CLLT</p>
+            <p class="subtitle">Researchers bridging theoretical linguistics and computational innovation</p>
+            <p class="meta">International collaboration · Interdisciplinary expertise · Open science</p>
         </div>
     </header>
 
-    <main>
-        <section class="about-section" id="director">
-            <div class="container">
-                <h2>Lab Director</h2>
-                <div class="team-grid" style="max-width: 500px; margin: 0 auto;">
-                    <div class="team-member">
-                        <img src="images/chatzikyriakidis.jpg" alt="Stergios Chatzikyriakidis" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; display: block;" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces'">
-                        <h3>Stergios Chatzikyriakidis</h3>
-                        <p class="role">Professor of Computational Linguistics</p>
-                        <p>Lab Director</p>
-                        <p>University of Crete</p>
-                        <a href="https://www.stergioschatzikyriakidis.com/" target="_blank">Personal Website</a>
+    <!-- Lab Director -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-xl">Lab Director</h2>
+            <div class="team-grid" style="max-width: 500px; margin: 0 auto;">
+                <div class="team-card">
+                    <img src="images/chatzikyriakidis.jpg" alt="Stergios Chatzikyriakidis" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=12'">
+                    <h3 class="team-name">Stergios Chatzikyriakidis</h3>
+                    <p class="team-role">Professor of Computational Linguistics</p>
+                    <p class="team-description">
+                        Director of CLLT Lab · Associate Researcher at CLASP (Gothenburg) · 
+                        100+ publications · h-index 24 · 1600+ citations
+                    </p>
+                    <div class="team-links">
+                        <a href="https://www.stergioschatzikyriakidis.com/" target="_blank">🌐 Website</a>
+                        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">🎓 Scholar</a>
+                        <a href="mailto:schatz@uoc.gr">📧 Email</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="research-section" id="team">
-            <div class="container">
-                <h2>Research Team</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="images/coidaki.png" alt="Fotini Coidaki" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; display: block;">
-                        <h3>Fotini Coidaki</h3>
-                        <p class="role">PhD Student</p>
-                        <p>Digital Humanities, computational analysis of ancient Greek texts, knowledge graph extraction</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="images/papadakis.jpg" alt="Dimitrios Papadakis" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; display: block;">
-                        <h3>Dimitrios Papadakis</h3>
-                        <p class="role">MA Student</p>
-                        <p>Greek dialectal NLP, low-resource language processing, corpus development</p>
-                    </div>
+    <!-- Current Lab Members -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="text-center mb-xl">Current Lab Members</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/coidaki.png" alt="Fotini Coidaki" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=5'">
+                    <h3 class="team-name">Fotini Coidaki</h3>
+                    <p class="team-role">PhD Student</p>
+                    <p class="team-description">
+                        Digital humanities, computational analysis of ancient Greek texts, knowledge graph extraction
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/papadakis.jpg" alt="Dimitrios Papadakis" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=13'">
+                    <h3 class="team-name">Dimitrios Papadakis</h3>
+                    <p class="team-role">MA Student</p>
+                    <p class="team-description">
+                        Greek dialectal NLP, low-resource language processing, corpus development
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/giannikouri.jpg" alt="Eirini Giannikouri" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=9'">
+                    <h3 class="team-name">Eirini Chrysovalantou Giannikouri</h3>
+                    <p class="team-role">Student Researcher</p>
+                    <p class="team-description">
+                        Greek NLP, NLI datasets, computational linguistics
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/katsouli.jpg" alt="Vasiliki Katsouli" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=24'">
+                    <h3 class="team-name">Vasiliki Katsouli</h3>
+                    <p class="team-role">Student Researcher</p>
+                    <p class="team-description">
+                        Natural language inference, Greek language resources
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="about-section" id="join">
-            <div class="container">
-                <div class="content-section highlight">
-                    <h2>Join Our Team</h2>
-                    <p>
-                        We are always looking for motivated students and researchers interested in computational 
-                        linguistics, NLP, and language technology. If you are interested in pursuing graduate studies 
-                        or research collaboration with CLLT, please contact us.
+    <!-- Key International Collaborators -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-xl">Key International Collaborators</h2>
+            
+            <h3 class="mt-lg mb-md">CLASP - University of Gothenburg (Sweden)</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/bernardy.jpg" alt="Jean-Philippe Bernardy" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=14'">
+                    <h3 class="team-name">Jean-Philippe Bernardy</h3>
+                    <p class="team-role">Senior Researcher</p>
+                    <p class="team-description">
+                        Probabilistic semantics, natural language inference, proof assistants · 11+ joint papers
                     </p>
-                    <p>
-                        <strong>Research Areas:</strong> Natural Language Processing, Neuro-Symbolic AI, Greek Language 
-                        Technology, Computational Semantics, Digital Humanities, Formal Linguistics
+                    <div class="team-links">
+                        <a href="https://jyp.github.io/" target="_blank">🌐 Website</a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/cooper.jpg" alt="Robin Cooper" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=33'">
+                    <h3 class="team-name">Robin Cooper</h3>
+                    <p class="team-role">Professor</p>
+                    <p class="team-description">
+                        Type theory, dialogue, formal semantics · Cambridge Elements co-author
+                    </p>
+                    <div class="team-links">
+                        <a href="https://sites.google.com/view/robincooper/" target="_blank">🌐 Website</a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/dobnik.jpg" alt="Simon Dobnik" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=67'">
+                    <h3 class="team-name">Simon Dobnik</h3>
+                    <p class="team-role">Associate Professor</p>
+                    <p class="team-description">
+                        Computational semantics, spatial language, dialogue systems · 7+ joint papers
+                    </p>
+                    <div class="team-links">
+                        <a href="https://www.gu.se/en/about/find-staff/simondobnik" target="_blank">🌐 Profile</a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/ek.jpg" alt="Adam Ek" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=51'">
+                    <h3 class="team-name">Adam Ek</h3>
+                    <p class="team-role">Researcher</p>
+                    <p class="team-description">
+                        Natural language inference, parsing, neural models · 8+ joint papers
                     </p>
                 </div>
 
-                <div class="content-section" id="alumni" style="margin-top: 2rem;">
-                    <h2>Alumni</h2>
-                    <p>
-                        Our alumni have gone on to successful careers in academia and industry, contributing to 
-                        advancements in computational linguistics and language technology worldwide.
+                <div class="team-card">
+                    <img src="images/lappin.jpg" alt="Shalom Lappin" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=71'">
+                    <h3 class="team-name">Shalom Lappin</h3>
+                    <p class="team-role">Professor Emeritus</p>
+                    <p class="team-description">
+                        King's College London / QMUL · CLASP Senior Researcher · Probabilistic semantics
                     </p>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <h3 class="mt-xl mb-md">Type Theory & Formal Semantics</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/luo.jpg" alt="Zhaohui Luo" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=68'">
+                    <h3 class="team-name">Zhaohui Luo</h3>
+                    <p class="team-role">Professor</p>
+                    <p class="team-description">
+                        Royal Holloway, University of London · Type-theoretical semantics pioneer · JLLI 2023
+                    </p>
+                    <div class="team-links">
+                        <a href="https://www.cs.rhul.ac.uk/home/zhaohui/" target="_blank">🌐 Website</a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/gregoromichelaki.jpg" alt="Eleni Gregoromichelaki" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=47'">
+                    <h3 class="team-name">Eleni Gregoromichelaki</h3>
+                    <p class="team-role">Senior Lecturer</p>
+                    <p class="team-description">
+                        University of Malta · Dialogue, Dynamic Syntax · 2 Cambridge books in press
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/sutton.jpg" alt="Peter Sutton" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=8'">
+                    <h3 class="team-name">Peter Sutton</h3>
+                    <p class="team-role">Researcher</p>
+                    <p class="team-description">
+                        Type theory, semantics · 2 Cambridge books in press
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="mt-xl mb-md">Greek NLP & Linguistics</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/kogkalidis.jpg" alt="Konstantinos Kogkalidis" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=65'">
+                    <h3 class="team-name">Konstantinos Kogkalidis</h3>
+                    <p class="team-role">Researcher</p>
+                    <p class="team-description">
+                        Utrecht University · Greek NLP, parsing, OYXOY dataset · 3 major joint papers
+                    </p>
+                    <div class="team-links">
+                        <a href="https://konstantinoskokos.github.io/" target="_blank">🌐 Website</a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/spathas.jpg" alt="Giorgos Spathas" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=57'">
+                    <h3 class="team-name">Giorgos Spathas</h3>
+                    <p class="team-role">Assistant Professor</p>
+                    <p class="team-description">
+                        University of Ioannina · Greek theoretical linguistics, syntax
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/qwaider.jpg" alt="Chatrine Qwaider" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=28'">
+                    <h3 class="team-name">Chatrine Qwaider</h3>
+                    <p class="team-role">Researcher</p>
+                    <p class="team-description">
+                        Dialectal NLP, Arabic and Greek varieties · GRDD dataset co-creator
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/michelioudakis.jpg" alt="Dimitris Michelioudakis" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=52'">
+                    <h3 class="team-name">Dimitris Michelioudakis</h3>
+                    <p class="team-role">Researcher</p>
+                    <p class="team-description">
+                        Greek syntax, morphology · Oxford University Press chapter co-author
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="mt-xl mb-md">Natural Logic & Computational Linguistics</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/kalouli.jpg" alt="Aikaterini-Lida Kalouli" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=27'">
+                    <h3 class="team-name">Aikaterini-Lida Kalouli</h3>
+                    <p class="team-role">Researcher</p>
+                    <p class="team-description">
+                        Natural logic, NLI · NALOMA workshop series co-organizer · JLLI special issue editor
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/paiva.jpg" alt="Valeria de Paiva" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=49'">
+                    <h3 class="team-name">Valeria de Paiva</h3>
+                    <p class="team-role">Principal Scientist</p>
+                    <p class="team-description">
+                        Topos Institute · Natural logic, category theory · NALOMA IV co-editor
+                    </p>
+                    <div class="team-links">
+                        <a href="https://vcvpaiva.github.io/" target="_blank">🌐 Website</a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/talman.jpg" alt="Aarne Talman" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=59'">
+                    <h3 class="team-name">Aarne Talman</h3>
+                    <p class="team-role">Researcher</p>
+                    <p class="team-description">
+                        University of Helsinki · NLI, model robustness · 3 joint papers
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="mt-xl mb-md">University of Crete Collaborators</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/anagnostopoulou.jpg" alt="Elena Anagnostopoulou" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=25'">
+                    <h3 class="team-name">Elena Anagnostopoulou</h3>
+                    <p class="team-role">Professor</p>
+                    <p class="team-description">
+                        Department of Philology · ERC Advanced Grant PI (PHYLPROGRAM) · Syntax
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/panagakis.jpg" alt="Ioannis Panagakis" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=63'">
+                    <h3 class="team-name">Ioannis Panagakis</h3>
+                    <p class="team-role">Associate Professor</p>
+                    <p class="team-description">
+                        University of Athens · Machine learning, computer vision
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/natsina.jpg" alt="Anastasia Natsina" class="team-photo" onerror="this.src='https://i.pravatar.cc/150?img=44'">
+                    <h3 class="team-name">Anastasia Natsina</h3>
+                    <p class="team-role">Researcher</p>
+                    <p class="team-description">
+                        Digital humanities, Greek poetry · RAG poetry generation paper (2025)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Our Team -->
+    <section id="join" class="section section-alt">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="mb-lg">Join Our Team</h2>
+                <p style="font-size: 1.1rem; color: var(--color-text-light); line-height: 1.8; margin-bottom: var(--spacing-lg);">
+                    We welcome applications from motivated students and researchers interested in computational linguistics, 
+                    NLP, and language technology at the intersection of theory and practice.
+                </p>
+                
+                <div style="text-align: left; max-width: 700px; margin: 0 auto;">
+                    <h3 class="mt-lg">What We Offer</h3>
+                    <ul style="line-height: 2; color: var(--color-text-light);">
+                        <li>Training in both formal linguistics AND computational methods</li>
+                        <li>Access to European research networks (CLASP, TALOS, ERC projects)</li>
+                        <li>Opportunities to publish in top venues (ACL, EACL, Cambridge, Oxford)</li>
+                        <li>Collaboration with leading international researchers</li>
+                        <li>Work on under-resourced languages and explainable AI</li>
+                        <li>Beautiful location in Crete, Greece</li>
+                    </ul>
+
+                    <h3 class="mt-lg">Who We're Looking For</h3>
+                    <ul style="line-height: 2; color: var(--color-text-light);">
+                        <li><strong>PhD Students:</strong> Background in linguistics, CS, or related fields</li>
+                        <li><strong>Postdocs:</strong> Strong publication record in CL/NLP</li>
+                        <li><strong>Visiting Researchers:</strong> Interest in collaboration</li>
+                        <li><strong>MA Students:</strong> Passion for language and computation</li>
+                    </ul>
+                </div>
+
+                <div class="hero-cta mt-xl" style="justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                    <a href="https://www.stergioschatzikyriakidis.com/" class="btn btn-secondary" style="color: var(--color-text); border-color: var(--color-border);" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alumni -->
+    <section id="alumni" class="section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="mb-md">Alumni</h2>
+                <p style="color: var(--color-text-light); font-size: 1.1rem; line-height: 1.7;">
+                    Our alumni have gone on to successful careers in academia and industry worldwide, contributing to 
+                    advancements in computational linguistics, NLP, and language technology. Many continue as active 
+                    collaborators on research projects.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
@@ -139,7 +375,7 @@
             <div class="powered-by">
                 <span class="powered-by-text">Powered by</span>
                 <a href="https://www.simasiaai.gr/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/simasiaai-logo.png" alt="SimasiaAI" class="powered-by-logo">
+                    <img src="images/simasiaai-logo.png" alt="SimasiaAI" class="powered-by-logo" onerror="this.style.display='none'">
                 </a>
             </div>
         </div>
