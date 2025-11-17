@@ -23,11 +23,10 @@
                 <li class="has-dropdown">
                     <a href="research.html" class="active">Research</a>
                     <ul class="nav-dropdown">
-                        <li><a href="nli.html">Natural Language Inference</a></li>
-                        <li><a href="greek-nlp.html">Greek NLP</a></li>
-                        <li><a href="type-theory.html">Type-Theoretical Semantics</a></li>
-                        <li><a href="digital-humanities.html">Digital Humanities</a></li>
-                        <li><a href="distance-studies.html">Linguistic Distance Studies</a></li>
+                        <li><a href="research.html#areas">Research Areas</a></li>
+                        <li><a href="research.html#projects">Current Projects</a></li>
+                        <li><a href="research.html#applications">AI/NLP Applications</a></li>
+                        <li><a href="research.html#collaborations">Collaborations</a></li>
                     </ul>
                 </li>
                 <li class="has-dropdown">
@@ -115,15 +114,13 @@
                     </div>
                 </div>
 
-                <div class="about-grid" style="margin-bottom: 2rem; grid-template-columns: 1fr; max-width: 900px; margin-left: auto; margin-right: auto;">
-                    <div class="about-text">
-                        <h3>Digital Humanities</h3>
-                        <p>
-                            We apply computational methods to classical philology and historical linguistics, particularly 
-                            focusing on ancient Greek texts. Our work includes knowledge graph extraction, automated analysis 
-                            of historical texts, and tools for digital scholarship.
-                        </p>
-                    </div>
+                <div class="content-section" style="margin-bottom: 2rem;">
+                    <h3>Digital Humanities</h3>
+                    <p>
+                        We apply computational methods to classical philology and historical linguistics, particularly 
+                        focusing on ancient Greek texts. Our work includes knowledge graph extraction, automated analysis 
+                        of historical texts, and tools for digital scholarship.
+                    </p>
                 </div>
             </div>
         </section>
@@ -168,6 +165,19 @@
                             combining computational methods with theoretical linguistics.
                         </p>
                     </div>
+
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&q=80" alt="Thucydides goes RAGging" loading="lazy">
+                        </div>
+                        <h3>Thucydides goes RAGging (RAG-to-CoQ3)</h3>
+                        <p>
+                            Retrieval-augmented generation pipeline that ingests Thucydides' History, builds verified knowledge graphs, 
+                            and feeds structured claims to Coq for proof obligations. RAG-to-CoQ3 links long-context reading with 
+                            symbolic verification, enabling explainable answers about classical events and actors.
+                        </p>
+                        <p style="padding: 0 var(--spacing-md);">Prototype combines semantic chunking, contrastive retrieval, and proof-term synthesis.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -211,6 +221,7 @@
                 </div>
             </div>
         </section>
+
         
     </main>
 
