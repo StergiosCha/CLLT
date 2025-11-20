@@ -968,6 +968,14 @@ footer p {
     object-fit: cover;
 }
 
+.dialect-icon {
+    height: 140px;
+}
+
+.dialect-icon img {
+    object-fit: cover;
+}
+
 .research-section {
     padding: var(--spacing-2xl) 0;
 }
