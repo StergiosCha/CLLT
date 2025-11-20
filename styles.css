@@ -968,6 +968,19 @@ footer p {
     object-fit: cover;
 }
 
+.research-icon.tall {
+    height: 400px;
+    background: var(--color-bg-gray);
+}
+
+.research-icon.tall img {
+    object-fit: cover;
+}
+
+.research-icon.cover {
+    background: var(--color-bg-gray);
+}
+
 .dialect-icon {
     height: 276px;
     background: var(--color-bg-gray);
