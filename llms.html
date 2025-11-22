@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Large Language Models - CLLT Lab</title>
+    <meta name="description" content="CLLT's research on Large Language Models: public engagement, event extraction, MEDEA platform, and dialectal fine-tuning.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                    <img src="images/cllt-logo.png" alt="CLLT Lab Logo" class="logo">
+                    <h1>CLLT</h1>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="#" onclick="return false;" style="cursor: pointer;" class="active">Research</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="nli.html">Natural Language Inference</a></li>
+                        <li><a href="greek-nlp.html">Greek NLP</a></li>
+                        <li><a href="type-theory.html">Type-Theoretical Semantics</a></li>
+                        <li><a href="digital-humanities.html">Digital Humanities</a></li>
+                        <li><a href="distance-studies.html">Linguistic Distance Studies</a></li>
+                        <li><a href="llms.html" class="active">Large Language Models</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="team.html">Team</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="team.html#director">Lab Director</a></li>
+                        <li><a href="team.html#team">Research Team</a></li>
+                        <li><a href="team.html#join">Join Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="publications.html">Publications</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="publications.html#recent">Recent Publications</a></li>
+                        <li><a href="publications.html#datasets">Datasets & Resources</a></li>
+                        <li><a href="publications.html#complete">Complete Bibliography</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-modern">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1920&q=80" alt="Large Language Models Research" loading="eager">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1>Large Language Models</h1>
+            <p class="subtitle">Research, Applications, and Public Engagement</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Overview</h2>
+                    <p>
+                        CLLT conducts research on Large Language Models (LLMs) across multiple dimensions: from understanding 
+                        their reasoning capabilities and limitations, to developing applications for classical texts and dialectal 
+                        varieties, to engaging with the broader public about AI and language technology.
+                    </p>
+                    <p>
+                        Our work spans theoretical investigation of LLM behavior, practical applications in digital humanities 
+                        and NLP, and public outreach to make AI accessible to non-technical audiences.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section">
+            <div class="container">
+                <h2>Public Engagement: Bringing LLMs to the General Public</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Artificial Intelligence and Large Language Models</h3>
+                        <p>
+                            A comprehensive, public-facing book in Greek that explains artificial intelligence and large language 
+                            models to a general audience. This work bridges the gap between cutting-edge AI research and public 
+                            understanding, covering the history, uses, and concerns surrounding modern language technology.
+                        </p>
+                        <p>
+                            The book makes complex AI concepts accessible, helping readers understand how LLMs work, their 
+                            capabilities and limitations, and their impact on society.
+                        </p>
+                        <p style="margin-top: 1.5rem;">
+                            <a href="https://www.diavlos-books.gr/product/1226/texniti-noimosynimegala-glossika-montela-istoria,-xriseis,-anisyxies-" target="_blank" class="btn btn-primary">View Book</a>
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80" alt="AI and LLMs Book" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <h2>Thucydides Goes Ragging: Event Extraction from Classical Texts</h2>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Thucydides Event Extraction" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h3>RAG-Enhanced Event Knowledge Extraction</h3>
+                        <p>
+                            Applying Large Language Models with Retrieval-Augmented Generation (RAG) to extract event knowledge 
+                            from Thucydides' historical texts. This work demonstrates how modern LLMs can be combined with 
+                            symbolic reasoning to extract structured knowledge from classical Greek literature.
+                        </p>
+                        <p>
+                            The "Thucydides Goes Ragging" project showcases LLM capabilities in understanding complex historical 
+                            narratives and extracting structured event information, combining neural language understanding with 
+                            formal knowledge representation.
+                        </p>
+                        <p style="margin-top: 1.5rem;">
+                            <a href="https://arxiv.org/abs/2506.07042" target="_blank" class="btn btn-primary">View Paper</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section">
+            <div class="container">
+                <h2>MEDEA Platform</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>MEDEA-NEUMOUSA</h3>
+                        <p>
+                            Advanced platform for computational analysis of ancient Greek texts, leveraging Large Language Models 
+                            for knowledge graph extraction and neuro-symbolic reasoning. MEDEA combines the power of modern LLMs 
+                            with symbolic reasoning to enable sophisticated analysis of classical literature.
+                        </p>
+                        <p>
+                            <strong>Key Features:</strong>
+                        </p>
+                        <ul style="margin-left: 2rem; line-height: 2;">
+                            <li>LLM-powered entity recognition and relationship extraction</li>
+                            <li>Knowledge graph construction from classical texts</li>
+                            <li>Semantic search across ancient Greek corpora</li>
+                            <li>Integration of neural and symbolic methods</li>
+                            <li>Tools for philological research and annotation</li>
+                        </ul>
+                        <p style="margin-top: 1.5rem;">
+                            <a href="https://medea-bvca.onrender.com/" target="_blank" class="btn btn-primary">Access MEDEA Platform</a>
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80" alt="MEDEA Platform" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <h2>Dialectal Llama-krikri: Fine-tuning for Greek Dialects</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--color-text-light);">
+                    Specialized LLM models fine-tuned for Greek dialectal varieties
+                </p>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="images/cretan.png" alt="Cretan Dialect Model" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=600&q=80'">
+                        </div>
+                        <h3>Cretan Dialect</h3>
+                        <p>Fine-tuned Llama model for Cretan Greek</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon dialect-icon">
+                            <img src="images/cypriot.jpg" alt="Cypriot Dialect Model" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=600&q=80'">
+                        </div>
+                        <h3>Cypriot Dialect</h3>
+                        <p>Specialized model for Cypriot Greek</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon dialect-icon">
+                            <img src="images/northern.jpg" alt="Northern Dialect Model" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=600&q=80'">
+                        </div>
+                        <h3>Northern Greek Dialect</h3>
+                        <p>Model trained on Northern Greek varieties</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon dialect-icon">
+                            <img src="images/pontic.png" alt="Pontic Dialect Model" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=600&q=80'">
+                        </div>
+                        <h3>Pontic Dialect</h3>
+                        <p>Model for Pontic Greek</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <p style="color: var(--color-text-light); max-width: 800px; margin: 0 auto;">
+                        Fine-tuning Large Language Models (specifically Llama) for Greek dialectal varieties enables NLP 
+                        applications for low-resource language varieties. These models are trained on the GRDD dataset 
+                        and demonstrate the power of LLM fine-tuning for under-resourced languages.
+                    </p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="greek-nlp.html" class="btn btn-secondary">Learn More About Greek NLP</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Research Directions</h2>
+                    <p>
+                        Our LLM research continues to explore new frontiers in language understanding, from evaluating 
+                        reasoning capabilities to developing applications for classical texts and low-resource languages. 
+                        We combine theoretical investigation with practical applications, always with an eye toward making 
+                        AI more accessible and useful for both researchers and the general public.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Computational Linguistics and Language Technology Lab, University of Crete</p>
+            <div class="powered-by">
+                <span class="powered-by-text">Powered by</span>
+                <a href="https://www.simasiaai.gr/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/simasiaai-logo.png" alt="SimasiaAI" class="powered-by-logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="mobile-menu.js"></script>
+</body>
+</html>
+
