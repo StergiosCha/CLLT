@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natural Language Inference - CLLT Lab</title>
-    <meta name="description" content="CLLT's work on natural language inference: symbolic systems, proof assistants, FraCaS, OYXOY, neural-symbolic integration.">
+    <meta name="description" content="CLLT's work on natural language inference: reasoning capabilities, punctuation effects, neural-symbolic integration using logical programming and proof-assistant technology">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +14,20 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <a href="index.html">
-                    <img src="images/cllt-logo.png" alt="CLLT Lab Logo" class="logo" onerror="this.style.display='none'">
+                <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                    <img src="images/cllt-logo.png" alt="CLLT Lab Logo" class="logo">
                     <h1>CLLT</h1>
                 </a>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li class="has-dropdown">
-                    <a href="research.html">Research</a>
+                    <a href="research.html" class="active">Research</a>
                     <ul class="nav-dropdown">
                         <li><a href="nli.html" class="active">Natural Language Inference</a></li>
                         <li><a href="greek-nlp.html">Greek NLP</a></li>
@@ -31,233 +36,253 @@
                         <li><a href="distance-studies.html">Linguistic Distance Studies</a></li>
                     </ul>
                 </li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="datasets.html">Datasets</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="news.html">News</a></li>
+                <li class="has-dropdown">
+                    <a href="team.html">Team</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="team.html#director">Lab Director</a></li>
+                        <li><a href="team.html#team">Research Team</a></li>
+                        <li><a href="team.html#join">Join Our Team</a></li>
+                        <li><a href="team.html#alumni">Alumni</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="publications.html">Publications</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="publications.html#recent">Recent Publications</a></li>
+                        <li><a href="publications.html#datasets">Datasets & Resources</a></li>
+                        <li><a href="publications.html#complete">Complete Bibliography</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container">
+    <header class="hero-modern">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80" alt="Natural Language Inference Research" loading="eager">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
             <h1>Natural Language Inference</h1>
-            <p class="subtitle">Combining symbolic reasoning with neural approaches</p>
-            <p class="meta">Type theory · Proof assistants · FraCaS benchmark · Neural-symbolic integration</p>
+            <p class="subtitle">Neural-Symbolic Integration for Advanced Reasoning</p>
         </div>
     </header>
 
-    <section class="section">
-        <div class="container">
-            <div style="max-width: 900px; margin: 0 auto;">
-                <h2 class="mb-lg">Our Approach</h2>
-                <p>
-                    CLLT's work on natural language inference (NLI) is distinguished by its <strong>integration of formal semantic 
-                    theory with computational implementation</strong>. Unlike pure machine learning approaches that treat NLI as pattern 
-                    matching, we build systems grounded in type-theoretical semantics and proof theory.
-                </p>
-                <p>
-                    Our research demonstrates that <strong>linguistic theory enhances computational systems</strong>: our symbolic NLI 
-                    system achieves 81% accuracy on the FraCaS test suite (best performance by a logical system) and was the first 
-                    to complete the challenging anaphora and ellipsis sections. This work bridges the gap between neural scalability 
-                    and symbolic interpretability.
-                </p>
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Our Approach</h2>
+                    <p>
+                        CLLT's work on natural language inference (NLI) embraces both <strong>neural and symbolic approaches</strong>, 
+                        recognizing the strengths of each paradigm. We develop neural models for their scalability and robustness, 
+                        while integrating symbolic reasoning for interpretability and precision. Our research aims at <strong>neural-symbolic 
+                        (NeSy) integration</strong>, combining the best of both worlds.
+                    </p>
+                    <p>
+                        We investigate fundamental questions about <strong>reasoning capabilities</strong> in NLI systems, examining how 
+                        models handle complex inference patterns, the role of linguistic structure, and the impact of surface-level 
+                        features like <strong>punctuation</strong> on inference judgments. Our work spans from theoretical investigations 
+                        of meta-inferential properties to practical systems that leverage both neural architectures and formal semantics.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="text-center mb-xl">Key Projects</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="badge badge-accent">Landmark Result</span>
+        <section class="research-section">
+            <div class="container">
+                <h2>Key Research Areas</h2>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Reasoning Capabilities" loading="lazy">
                         </div>
-                        <h3 class="card-title">FraCaS Test Suite: 81% Accuracy</h3>
-                        <p class="card-text">
-                            <strong>Best performance by a logical system on FraCaS</strong> (Bernardy & Chatzikyriakidis, IWCS 2021). 
-                            Complete handling of temporal reasoning, anaphora, and ellipsis using type-theoretical semantics 
-                            implemented in proof assistants.
+                        <h3>Reasoning Capabilities</h3>
+                        <p>
+                            Investigating the meta-inferential properties of NLI systems, understanding what kinds of reasoning 
+                            patterns models can and cannot handle, and developing methods to improve reasoning capabilities.
                         </p>
-                        <div class="card-footer">
-                            <a href="https://aclanthology.org/2021.iwcs-1.2/" class="pub-link" target="_blank">📄 Paper</a>
-                        </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="badge badge-primary">2024</span>
-                            <span class="badge badge-accent">Innovation</span>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&q=80" alt="Punctuation Effects" loading="lazy">
                         </div>
-                        <h3 class="card-title">OYXOY: Multi-Label NLI</h3>
-                        <p class="card-text">
-                            First NLI dataset marking <strong>all possible inference labels</strong>, accounting for semantic ambiguity. 
-                            1,763 pairs with 6,896 word senses. Challenges the assumption that NLI has single correct answers.
+                        <h3>Punctuation Effects</h3>
+                        <p>
+                            Studying how punctuation marks affect NLI judgments, revealing important insights about how neural 
+                            models process linguistic structure and surface-level features.
                         </p>
-                        <div class="card-footer">
-                            <a href="https://aclanthology.org/2024.findings-eacl.21/" class="pub-link" target="_blank">📄 Paper</a>
-                            <a href="https://github.com/StergiosCha/OYXOY" class="pub-link" target="_blank">💻 Code</a>
-                        </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="badge badge-success">2014-2025</span>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="Neural-Symbolic Integration" loading="lazy">
                         </div>
-                        <h3 class="card-title">Proof Assistants for NLI</h3>
-                        <p class="card-text">
-                            Using Coq and other proof assistants for <strong>formal verification of natural language inferences</strong>. 
-                            Enables explainable AI through human-readable proofs. Foundational work published in JLLI (2014).
+                        <h3>Neural-Symbolic Integration</h3>
+                        <p>
+                            Developing hybrid systems that combine neural models with symbolic reasoning, leveraging RAG (Retrieval-Augmented 
+                            Generation) and proof assistants for enhanced inference capabilities.
                         </p>
-                        <div class="card-footer">
-                            <a href="https://link.springer.com/article/10.1007/s10849-014-9208-x" class="pub-link" target="_blank">📄 JLLI 2014</a>
-                        </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="badge badge-primary">2022-2025</span>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Zeugma" loading="lazy">
                         </div>
-                        <h3 class="card-title">Greek NLI Resources</h3>
-                        <p class="card-text">
-                            Extended Greek FraCaS (774 examples), de-dropped Greek XNLI, and fine-grained entailment resources 
-                            for under-resourced language research.
+                        <h3>Zeugma</h3>
+                        <p>
+                            Research on zeugma and copredication phenomena, exploring how NLI systems handle cases where words 
+                            participate in multiple semantic relations simultaneously.
                         </p>
-                        <div class="card-footer">
-                            <a href="https://aclanthology.org/2022.dclrl-1.6/" class="pub-link" target="_blank">📄 LREC 2022</a>
-                            <a href="https://github.com/GU-CLASP/LREC_2022" class="pub-link" target="_blank">💻 Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="badge badge-accent">Workshop Series</span>
-                        </div>
-                        <h3 class="card-title">NALOMA: Natural Logic Meets ML</h3>
-                        <p class="card-text">
-                            Co-organizer of 4 international workshops (2019-2023) exploring hybrid approaches combining 
-                            natural logic with machine learning. Special issue in JLLI (2024).
-                        </p>
-                        <div class="card-footer">
-                            <a href="https://link.springer.com/article/10.1007/s10849-023-09408-y" class="pub-link" target="_blank">📄 JLLI SI</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="badge badge-primary">2019-2025</span>
-                        </div>
-                        <h3 class="card-title">Bayesian Inference Semantics</h3>
-                        <p class="card-text">
-                            Probabilistic framework for formal semantics, combining type theory with Bayesian methods. 
-                            CSLI volume (2023) and *SEM paper (2019).
-                        </p>
-                        <div class="card-footer">
-                            <a href="https://aclanthology.org/S19-1029/" class="pub-link" target="_blank">📄 *SEM 2019</a>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section">
-        <div class="container">
-            <div style="max-width: 900px; margin: 0 auto;">
-                <h2 class="mb-lg">Why This Matters</h2>
+        <section class="about-section">
+            <div class="container">
+                <h2>Major Projects</h2>
                 
-                <h3 class="mt-lg">Explainable AI</h3>
-                <p>
-                    Our proof-assistant-based approach produces <strong>human-readable logical proofs</strong> for inferences, 
-                    addressing the black-box problem in neural NLI systems. This is crucial for applications requiring transparency 
-                    and accountability.
-                </p>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>RAG-Enhanced Event Knowledge Base Construction</h3>
+                        <p>
+                            Our work on <strong>RAGged events</strong> combines retrieval-augmented generation with proof assistants 
+                            for event knowledge extraction. This approach demonstrates how neural RAG systems can be enhanced with 
+                            symbolic reasoning capabilities, creating more reliable and interpretable knowledge bases.
+                        </p>
+                        <p style="margin-top: 1.5rem;">
+                            <a href="https://arxiv.org/abs/2506.07042" target="_blank" class="btn btn-primary">View Paper</a>
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="RAG-Enhanced Events" loading="lazy">
+                    </div>
+                </div>
 
-                <h3 class="mt-lg">Semantic Precision</h3>
-                <p>
-                    Type-theoretical semantics provides <strong>compositional meaning representations</strong> that capture subtle 
-                    semantic distinctions missed by distributional approaches. Our work on FraCaS demonstrates superior handling 
-                    of quantifiers, temporal relations, and complex semantic phenomena.
-                </p>
+                <div class="about-grid" style="margin-top: 4rem;">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" alt="OYXOY Dataset" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h3>OYXOY: Multi-Label NLI for Greek</h3>
+                        <p>
+                            <strong>OYXOY</strong> is the first NLI dataset that marks <strong>all possible inference labels</strong>, 
+                            accounting for semantic ambiguity. With 1,763 NLI pairs and 6,896 word senses, it challenges the assumption 
+                            that NLI has single correct answers and enables research on fine-grained inference judgments.
+                        </p>
+                        <p style="margin-top: 1.5rem;">
+                            <a href="https://aclanthology.org/2024.findings-eacl.21/" target="_blank" class="btn btn-primary">View Paper</a>
+                        </p>
+                    </div>
+                </div>
 
-                <h3 class="mt-lg">Low-Resource Languages</h3>
-                <p>
-                    Symbolic approaches require <strong>less training data</strong> than pure neural methods, making them ideal 
-                    for under-resourced languages like Greek dialects. Our Greek NLI resources enable research that would be 
-                    impossible with data-hungry transformers alone.
-                </p>
+                <div class="about-grid" style="margin-top: 4rem;">
+                    <div class="about-text">
+                        <h3>Reverse Engineering NLI</h3>
+                        <p>
+                            A theoretical investigation of the <strong>meta-inferential properties</strong> of natural language inference 
+                            systems. This work examines what reasoning patterns NLI models can handle, revealing fundamental limitations 
+                            and capabilities of current approaches.
+                        </p>
+                        <p style="margin-top: 1.5rem;">
+                            <a href="publications.html" class="btn btn-primary">View Publication</a>
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Reverse Engineering NLI" loading="lazy">
+                    </div>
+                </div>
 
-                <h3 class="mt-lg">Hybrid Future</h3>
-                <p>
-                    We advocate for <strong>neural-symbolic integration</strong>: using neural models for robust parsing and 
-                    representation learning, combined with symbolic reasoning for precise inference. This synthesis offers 
-                    both scalability and interpretability.
-                </p>
+                <div class="about-grid" style="margin-top: 4rem;">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80" alt="Symbolic NLI" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h3>Symbolic NLI Systems</h3>
+                        <p>
+                            Our symbolic NLI system achieves <strong>81% accuracy on the FraCaS test suite</strong> (best performance 
+                            by a logical system), demonstrating the power of type-theoretical semantics and proof assistants. This 
+                            work shows how symbolic reasoning can complement neural approaches, providing explainable inference chains.
+                        </p>
+                        <p style="margin-top: 1.5rem;">
+                            <a href="https://aclanthology.org/2021.iwcs-1.2/" target="_blank" class="btn btn-primary">View Paper</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section section-alt">
-        <div class="container">
-            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <h2 class="mb-md">Selected Publications</h2>
-                <div style="text-align: left; margin-top: var(--spacing-lg);">
-                    <div class="publication-card">
-                        <h3 class="publication-title">OYXOY: A Modern NLP Test Suite for Modern Greek</h3>
-                        <div class="publication-authors">Kogkalidis, K., Chatzikyriakidis, S., et al.</div>
-                        <div class="publication-venue">Findings of EACL 2024</div>
-                        <div class="publication-links">
-                            <a href="https://aclanthology.org/2024.findings-eacl.21/" class="pub-link" target="_blank">Paper</a>
-                            <a href="datasets.html" class="pub-link secondary">Dataset</a>
+        <section class="research-section">
+            <div class="container">
+                <h2>Neural-Symbolic Integration</h2>
+                <div class="content-section">
+                    <p>
+                        Our research philosophy centers on <strong>neural-symbolic integration</strong>. We embrace neural approaches 
+                        for their scalability and ability to learn from data, while recognizing that symbolic reasoning provides 
+                        interpretability, precision, and the ability to handle low-resource scenarios.
+                    </p>
+                    <p>
+                        Projects like <strong>Zeugma</strong> and <strong>RAGged events</strong> exemplify this integration: combining 
+                        neural models (RAG, transformers) with symbolic components (proof assistants, type theory) to create systems 
+                        that are both powerful and explainable.
+                    </p>
+                    <p>
+                        This hybrid approach is the future of NLI: leveraging neural models for robust representation learning and 
+                        symbolic systems for precise reasoning, creating AI that is both scalable and interpretable.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <h2>Selected Publications</h2>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <h3>Reasoning with RAGged events</h3>
+                        <p class="role">Chatzikyriakidis, S. (2025)</p>
+                        <p>RAG-Enhanced Event Knowledge Base Construction combining retrieval-augmented generation with proof assistants.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://arxiv.org/abs/2506.07042" target="_blank" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">📄 arXiv</a>
                         </div>
                     </div>
 
-                    <div class="publication-card">
-                        <h3 class="publication-title">Applied Temporal Analysis: A Complete Run of the FraCaS Test Suite</h3>
-                        <div class="publication-authors">Bernardy, J.P., Chatzikyriakidis, S.</div>
-                        <div class="publication-venue">IWCS 2021</div>
-                        <div class="publication-links">
-                            <a href="https://aclanthology.org/2021.iwcs-1.2/" class="pub-link" target="_blank">Paper</a>
+                    <div class="research-card">
+                        <h3>Reverse Engineering NLI</h3>
+                        <p class="role">Blanck, R., Noble, B., Chatzikyriakidis, S. (2025)</p>
+                        <p>Study of the meta-inferential properties of Natural Language Inference systems.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://openreview.net/forum?id=NAcvSI2CRM" target="_blank" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">📄 Paper</a>
                         </div>
                     </div>
 
-                    <div class="publication-card">
-                        <h3 class="publication-title">A Wide-Coverage Symbolic Natural Language Inference System</h3>
-                        <div class="publication-authors">Chatzikyriakidis, S., Bernardy, J.P.</div>
-                        <div class="publication-venue">NoDaLiDa 2019</div>
-                        <div class="publication-links">
-                            <a href="https://aclanthology.org/W19-6131/" class="pub-link" target="_blank">Paper</a>
+                    <div class="research-card">
+                        <h3>OYXOY: A Modern NLP Test Suite</h3>
+                        <p class="role">Kogkalidis, K., Chatzikyriakidis, S., et al. (2024)</p>
+                        <p>First multi-label NLI dataset marking all possible inference labels for Modern Greek.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://aclanthology.org/2024.findings-eacl.21/" target="_blank" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">📄 Paper</a>
                         </div>
                     </div>
 
-                    <div class="publication-card">
-                        <h3 class="publication-title">Natural Language Inference in Coq</h3>
-                        <div class="publication-authors">Chatzikyriakidis, S., Luo, Z.</div>
-                        <div class="publication-venue">Journal of Logic, Language and Information, 2014</div>
-                        <div class="publication-links">
-                            <a href="https://link.springer.com/article/10.1007/s10849-014-9208-x" class="pub-link" target="_blank">Paper</a>
+                    <div class="research-card">
+                        <h3>Applied Temporal Analysis: FraCaS</h3>
+                        <p class="role">Bernardy, J.P., Chatzikyriakidis, S. (2021)</p>
+                        <p>81% accuracy on FraCaS test suite using type-theoretical semantics and proof assistants.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://aclanthology.org/2021.iwcs-1.2/" target="_blank" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">📄 Paper</a>
                         </div>
                     </div>
                 </div>
-                <div class="mt-lg">
+                <div style="text-align: center; margin-top: 3rem;">
                     <a href="publications.html" class="btn btn-primary">View All Publications</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
@@ -265,7 +290,7 @@
             <div class="powered-by">
                 <span class="powered-by-text">Powered by</span>
                 <a href="https://www.simasiaai.gr/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/simasiaai-logo.png" alt="SimasiaAI" class="powered-by-logo" onerror="this.style.display='none'">
+                    <img src="images/simasiaai-logo.png" alt="SimasiaAI" class="powered-by-logo">
                 </a>
             </div>
         </div>
