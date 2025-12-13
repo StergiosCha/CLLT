@@ -69,6 +69,12 @@ body {
     line-height: 1.7;
     color: var(--color-text);
     background-color: var(--color-bg);
+    background-image:
+        radial-gradient(at 0% 0%, rgba(27, 59, 111, 0.03) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(196, 150, 26, 0.03) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(27, 59, 111, 0.03) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgba(196, 150, 26, 0.03) 0px, transparent 50%);
+    background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -146,13 +152,17 @@ a:hover {
 
 /* ===== Navigation ===== */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.85);
+    /* More transparent */
+    backdrop-filter: blur(12px);
+    /* Stronger blur */
+    -webkit-backdrop-filter: blur(12px);
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid var(--color-border-light);
+    border-bottom: 1px solid rgba(225, 232, 237, 0.6);
+    /* More subtle border */
     box-shadow: var(--shadow-sm);
 }
 
@@ -464,11 +474,17 @@ a:hover {
 }
 
 .card {
-    background: var(--color-bg);
+    background: rgba(255, 255, 255, 0.7);
+    /* Glassmorphism base */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: var(--radius-lg);
     overflow: hidden;
     transition: all var(--transition-base);
-    border: 1px solid var(--color-border-light);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    /* Glass border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    /* Softer shadow */
 }
 
 .card:hover {
@@ -964,10 +980,12 @@ footer p {
 }
 
 .research-card {
-    background: var(--color-bg);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: var(--radius-lg);
     padding: var(--spacing-lg);
-    border: 1px solid var(--color-border-light);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     transition: all var(--transition-base);
     text-align: center;
 }
